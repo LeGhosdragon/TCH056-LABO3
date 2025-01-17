@@ -1,0 +1,161 @@
+body
+{
+    position:relative;
+    height: 96vh;
+    width: 80%;
+    right: 10%;
+    left: 10%;
+    justify-content:flex-end;
+    border: 1px solid black;
+    background: linear-gradient(237deg,#42b883,#35495e,#ff7e67, #347474,#35495e, #ff7e67);
+}
+#header
+{
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+#plated
+{
+    position: relative;
+    height: 100%;
+    width: 40%;
+}
+#gridArea
+{
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: grid;
+    left: 1%;
+    right: 0%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: -1px;
+    /*pointer-events: none;*/
+}
+/*#gridArea:hover
+{
+    left: -1000px
+}*/
+
+img[class*="img"]
+{
+    position: relative;
+    width: 18vw;
+    height: 8vh;
+    transition: 0.3s;
+    filter: drop-shadow(10px 10px 4px #4444dd);
+    border: 1px solid #347474;
+    /*pointer-events: auto;*/
+}
+img[class*="img"]:hover
+{
+    /*position: absolute;*/
+    z-index: 10;
+    /*border-left: 100px solid #ff7e67;
+    border-right: 100px solid #ff7e67;
+    border-bottom: 100px solid #ff7e67;*/
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    width: 30vw;
+    height: 16vh;
+    left: -70px;
+    border-top: 50px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-radius: 100px/90px;
+    /*left: 1000px;*/
+}
+
+img[class*="img"]:hover #img[class*="img"]
+{
+    border-top: 50px solid transparent;
+}
+#pong
+{
+    width: 100px;
+}
+#game
+{
+
+    height:  156px;
+    width: 200px;
+}
+.boxes {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 11px;
+    left: 3%;
+}
+.prog
+{
+    width: 15vw;
+    height: 15vh;
+}
+
+  
+  .face {
+    position: relative;
+    width: 18vw;
+    height: 18vh;
+    border-radius: 50%;
+    background: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .face::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    width: 150px;
+    height: 70px;
+    background: #b57700;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+  }
+  
+  .face:hover::before {
+    top: 120px;
+    width: 150px;
+    height: 70px;
+    background: #b57700;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+  }
+  
+  .eyes {
+    position: relative;
+    top: -40px;
+    display: flex;
+  }
+  
+  .eyes .eye {
+    position: relative;
+    width: 80px;
+    height: 7vh;
+    display: block;
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 50%;
+  }
+  
+  .eyes .eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    width: 40px;
+    height: 3.5vh;
+    background: #333;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+  }
