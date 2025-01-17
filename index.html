@@ -4,43 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page...?</title>
-    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet"/>
 </head>
 <body id="body">
     <header id="header">   
         <img id="plated" src="./images\coollogo_com-818298.png" alt="Logo">
     </header>
-    <script>document.querySelector('body').addEventListener('mousemove', eyeball);
-      function eyeball(){
-        var eye = document.querySelectorAll('.eye');
-        eye.forEach(function(eye){
-          let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
-          let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
-          let radian = Math.atan2(event.pageX - x, event.pageY - y);
-          let rot = (radian * (180 / Math.PI) * -1) + 270;
-          eye.style.transform = "rotate("+ rot +"deg)";
-        })
-      }</script>
     <main id="gridArea">
-        <div><img class="img1" src="https://picsum.photos/100"></div>
-        <div><img class="img2" src="https://picsum.photos/100"></div>
-        <div><img class="img3" src="https://picsum.photos/100"></div>
-        <div><img class="img4" src="https://picsum.photos/100"></div>
-        <div><img class="img5" src="https://picsum.photos/100"></div>
-        <div><img class="img6" src="https://picsum.photos/100"></div>
-        <div><img class="img7" src="https://picsum.photos/100"></div>
-        <div><img class="img8" src="https://picsum.photos/100"></div>
-        <div><img class="img9" src="https://picsum.photos/100"></div>
-        <div><img class="img10" src="https://picsum.photos/100"></div>
-        <div><img class="img11" src="https://picsum.photos/100"></div>
-        <div><img class="img12" src="https://picsum.photos/100"></div>
-        <div><img class="img13" src="https://picsum.photos/100"></div>
-        <div><img class="img14" src="https://picsum.photos/100"></div>
-        <div><img class="img15" src="https://picsum.photos/100"></div>
-        <div><img class="img16" src="https://picsum.photos/100"></div>
+        <div><img class="img1" src="https://picsum.photos/201"></div>
+        <div><img class="img2" src="https://picsum.photos/202"></div>
+        <div><img class="img3" src="https://picsum.photos/203"></div>
+        <div><img class="img4" src="https://picsum.photos/204"></div>
+        <div><img class="img5" src="https://picsum.photos/205"></div>
+        <div><img class="img6" src="https://picsum.photos/206"></div>
+        <div><img class="img7" src="https://picsum.photos/207"></div>
+        <div><img class="img8" src="https://picsum.photos/208"></div>
+        <div><img class="img9" src="https://picsum.photos/209"></div>
+        <div><img class="img10" src="https://picsum.photos/210"></div>
+        <div><img class="img11" src="https://picsum.photos/220"></div>
+        <div><img class="img12" src="https://picsum.photos/230"></div>
+        <div><img class="img13" src="https://picsum.photos/240"></div>
+        <div><img class="img14" src="https://picsum.photos/250"></div>
+        <div><img class="img15" src="https://picsum.photos/260"></div>
+        <div><img class="img16" src="https://picsum.photos/270"></div>
     </main>
     <section class="boxes">
-
 <!--Crédits pour le jeux de pong à été fait 
 Par    : Steven Lambert ->  
 Author : straker (sur gitHub) -> https://gist.github.com/straker
@@ -237,10 +225,20 @@ Source : https://codepen.io/natan-sitanggang/pen/YzpZXKR-->
             <div class="eye"></div>
           </div>
         </div>
-
+        <script>document.querySelector('body').addEventListener('mousemove', eyeball);
+          function eyeball(){
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function(eye){
+              let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+              let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+              let radian = Math.atan2(event.pageX - x, event.pageY - y);
+              let rot = (radian * (180 / Math.PI) * -1) + 270;
+              eye.style.transform = "rotate("+ rot +"deg)";
+            })
+          }</script>
     </section>
     <footer id="foot">
-
+      <a href="https://github.com/LeGhosdragon/TCH056-LABO3.git">Le git de cette page !</a>
     </footer>
 
 </body>
